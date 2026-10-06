@@ -1,0 +1,37 @@
+{
+  "uid": "email_spam_tester_app",
+  "type": "app",
+  "config": {
+    "name": "Email Spam Tester",
+    "description": "Test a HubSpot marketing email before it goes out: SPF, DKIM, DMARC, blocklists, content and a fix plan, the folder it lands in at different providers, and a permanent address in a list that checks every email the list receives.",
+    "distribution": "marketplace",
+    "auth": {
+      "type": "oauth",
+      "redirectUrls": [
+        "https://email-spam-tester.com/api/v1/hubspot/callback"
+      ],
+      "requiredScopes": [
+        "oauth",
+        "marketing-email",
+        "crm.objects.contacts.read",
+        "crm.objects.contacts.write",
+        "crm.lists.read",
+        "crm.lists.write"
+      ],
+      "optionalScopes": [],
+      "conditionallyRequiredScopes": []
+    },
+    "permittedUrls": {
+      "fetch": [
+        "https://email-spam-tester.com"
+      ],
+      "iframe": [],
+      "img": []
+    },
+    "support": {
+      "supportEmail": "hi@email-spam-tester.com",
+      "documentationUrl": "https://email-spam-tester.com/hubspot/",
+      "supportUrl": "https://email-spam-tester.com/contact/"
+    }
+  }
+}
